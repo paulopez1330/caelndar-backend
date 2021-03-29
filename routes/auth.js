@@ -17,7 +17,7 @@ router.post('/new',
 ],
 crearUusario);
 
-router.post 
+router.post('/',
 [
   check('email', 'el enail es obligatorio').isEmail(),
   check('password', 'el password debe ser de 6 caracteres').isLength({ min: 6}),
